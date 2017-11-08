@@ -1,0 +1,89 @@
+#include<stdio.h>
+#include<iostream.h>
+#include<conio.h>
+#include<graphics.h>
+void crt_acc();
+void log();
+void main()
+{
+int gd=DETECT,gm,n,i;
+initgraph(&gd,&gm,"C://TURBOC3//bgi");
+setbkcolor(1);
+while(1){
+printf("\n\t\t\t\t BANKING SYSTEM\n\n");
+printf("\t\t\4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4\n");
+printf("\t\t\4\t\t\t\t\t\t\4\n");
+printf("\t\t\4\t\t\t\t\t\t\4\n");
+printf("\t\t\4\tWELCOME TO OUR YOU LIMITED BANK\t\t\4\n");
+printf("\t\t\4\t\t\t\t\t\t\4\n");
+printf("\t\t\4\t\t\t\t\t\t\4\n");
+printf("\t\t\4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4\n\n");
+rectangle(250,170,370,220);
+rectangle(250,250,370,300);
+rectangle(250,330,370,380);
+gotoxy(32,13);
+printf("1.Creat Account");
+gotoxy(35,18);
+printf("2.Login");
+gotoxy(35,23);
+printf("3.Exit");
+gotoxy(35,25);
+printf("\n\n\t\tEnter the key (1-3):-");
+cin>>n;
+switch(n)
+{
+case 1:crt_acc();
+break;
+case 2:
+{
+ cout<<"Enter the Account No.:-" ;
+ if
+log();
+}
+break;
+case 3:exit(1);
+break;
+default :
+printf("\n worng number");
+}}
+getch();
+closegraph();
+}
+ void crt_acc()
+{
+FILE *fp;
+char na[20];
+char fa[20],che;
+char da[20];
+long int acc=123456789,ph,ba,addh;
+clrscr();
+do{
+cout<<"\nEnter the Name:-";
+gets(na);
+cout<<"\nEnter the father Name:-";
+gets(fa);
+cout<<"\nEnter the date of birth:-";
+cin>>da;
+cout<<"\nEnter the addhar no.12 digit:-";
+cin>>addh;
+cout<<"\nEnter the phone No. 10 digit:-";
+cin>>ph;
+cout<<"\nEnter the Amount is limit (5000):-";
+cin>>ba;
+if(ba>5000)
+{
+cout<<"\nAcc no. is:- "<<acc;
+}
+else
+printf("sorrry");
+fp=fopen("record.txt","a");
+fprintf(fp,"\n Name:-  %s \n father name:- %s\n Date Birth:- %s\n addhar no.:-  %ld\n phone no:- %ld\n Accountblance:- %ld\n Account no:- %ld \n",na,fa,da,addh,ph,ba,acc) ;
+printf(" \n Record writen successfully!!!!");
+fclose(fp);
+cout<<"\ndo,you want to continue plz press key(y/n):-";
+
+che=getche();
+}
+while(che=='y');
+
+}

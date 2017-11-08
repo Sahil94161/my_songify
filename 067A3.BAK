@@ -1,0 +1,16 @@
+//This programe is used to of calculate of simple interest
+#include<stdio.h>
+void main()
+{
+int prin,tym;
+floth rate,si;
+printf("Enter value of prin");
+scanf("%f", &prin);
+printf("Enter value of tym");
+scanf("%f",%&tym);
+printf("Enter value of rate");
+scanf(%"%f",&rate);
+si=(prin*tym*rate)/100;
+printf("si=%f",si);
+getch();
+}

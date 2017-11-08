@@ -1,0 +1,29 @@
+#include<iostream.h>
+#include<conio.h>
+class std
+{
+private :
+int f=1,n,i;
+public:
+void get()
+{
+cout<<endl<<"enter the no. of tableL:-";
+cin>>n;
+for(i=n;i>=1;i--)
+{
+f=f*i;
+}
+}
+void put()
+{
+cout<<"\nsum:-"<<f;
+}
+};
+void maian()
+{
+std s;
+clrscr();
+s.get();
+s.put();
+getch();
+}

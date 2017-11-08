@@ -1,0 +1,122 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int acc1,acc2,bl,type,pin,tran=1;
+ char na[24];
+ float ba=5000,dep,drw,trf;
+ text
+ clrscr();
+ printf("\n\t\t\t\t BANKING SYSTEM\n\n");
+ printf("\t\t\4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4\n");
+ printf("\t\t\4\t\t\t\t\t\t\4\n");
+ printf("\t\t\4\t\t\t\t\t\t\4\n");
+printf("\t\t\4\tWELCOME TO OUR YOU LIMITED BANK \t\t\4\n");
+printf("\t\t\4\t\t\t\t\t\t\4\n");
+printf("\t\t\4\t\t\t\t\t\t\4\n");
+ printf("\t\t\4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4 \4\n");
+ printf("Enter your name:-");
+ scanf("%s",&na);
+ printf("Please enter your account no.:-");
+ scanf("%d",&type);
+ while(tran==1)
+ {
+ int option;
+ printf("\n choose what you want to do\n ");
+  printf("1 - Balance Enquiry\n");
+  printf("2 - Depoist\n");
+  printf("3 - Withdraw\n");
+  printf("4 - transfer\n");
+  scanf("%d",&option);
+  switch(option)
+  {
+  case 1:
+  printf("\t\t\t*BLANCE ENQUIRY*\n\n");
+  printf("your current blanced is : %.2fRs\n",ba);
+  break;
+  case 2:
+  {
+  printf("\n\t\t\t*DEPOSITE AMOUNT*\n\n");
+  printf("how much money do you want to deposit:");
+   scanf("%f",&dep);
+   if(dep>0 && dep<=20000)
+   {
+   printf("\n your % 2f rs deposited in your account \n\n",dep);
+   bl+=dep;
+
+   }
+   else if (dep>20000)
+   printf("\n you can,t deposit that much amount in one time:\n\n");
+   else
+   {
+   printf("invalid depost amount\n");
+   }
+     }
+     break;
+     case 3:
+     {
+     printf("\n\t\t*WITHDRWA AMOUNT*\n\n");
+     printf("how much money do you want to withdraw");
+     scanf("%f",&drw);
+     if(drw<=ba && drw<=20000)
+     {
+     printf("\n you just withdraw %2fRs\n\n",drw);
+     ba=-drw;
+
+     }
+     else if(drw>20000)
+     {
+     printf("\n you can't withdraw that much amount is one time.\n\n ");
+     }
+     else
+     printf("\n you donot have enough money\n\n ");
+     }
+     break;
+     case 4:
+     {
+     printf("\n\t\t\tAccount you want to transfer:");
+     scanf("%d",&acc1);
+     printf("\n how much ammpunt?");
+     scanf("%f",&trf);
+     if(ba>=trf)
+     {
+     printf("\n your %2fRs successfully tranferred\n\n",trf);
+     ba-=trf;
+     }
+     else
+     printf("\n you do not have sufficient blance\n\n");
+
+     }
+     break;
+     default:
+     printf("invalid transaction ");
+  }
+  tran=0;
+  while(tran!=1 &&tran!=2)
+  {
+   printf("do you want to do another transaction?\n ");
+   printf("1. yes 2. no.\n ");
+    scanf("%d",&tran);
+   if(tran!=1 &&tran!=2)
+   {
+   printf("invalid no.\n choose between 1 and 2 only \n ");}}}
+   clrscr();
+   printf("\n\t\t\t--------------------------");
+ printf("\n\t\t\t\t YOU BANK LIMITID\n");
+ printf("\t\t\t ----------------------------\n\n");
+ printf("\n\n\t\t\t your name: %s \n\n",na);
+ printf("\t\t\t your account no: %d\n\n",type);
+ if(dep>=0&& dep < 20000)
+ {
+ printf("\t\t\t\4 you ve deposited %2fRs\n ",dep);
+ }
+ else
+ {
+ printf("\t\t\t\4 depostied ORs\n");
+ }
+ printf("\n\t\t\t\t   Thankyou !\n");
+ printf("\t\t\t welcome to you Bank Limitied\n");
+
+ getch();
+
+}

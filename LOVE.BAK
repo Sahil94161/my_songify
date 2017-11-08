@@ -1,0 +1,108 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<dos.h>
+#include<iostream.h>
+#include<string.h>
+#include<graphics.h>
+void main()
+{
+int i,k,j;
+char n[20],n1[20];
+int p;
+char cm=177,ce=178;
+int gd=DETECT,gm;
+clrscr();
+initgraph(&gd,&gm,"C://TURBOC3//bgi ");
+setcolor(4);
+circle(50,50,40);
+circle(118,50,40);
+line(22,80,80,140);
+line(80,140,138,85);
+setfillstyle(1,4);
+floodfill(50,52,4);
+setfillstyle(1,4);
+floodfill(120,52,4);
+setfillstyle(1,4);
+floodfill(80,50,4);
+setfillstyle(1,4);
+floodfill(80,80,4) ;
+settextstyle(5,HORIZ_DIR,3);
+outtextxy(30,150,"LOVE CALCLUTAOR");
+setcolor(GREEN);
+settextstyle(5,HORIZ_DIR,5);
+outtextxy(150,400,"By Created  SahiL Goyal");
+gotoxy(20,14);
+
+outtextxy(100,210,"loading");
+setcolor(BLUE);
+settextstyle(10,HORIZ_DIR,5);
+//printf("loading...!!");
+gotoxy(20,15);
+for(p=0;p<=26;p++)
+{
+cprintf("%c",cm);
+}
+gotoxy(20,15);
+for(p=0;p<=26;p++)
+{
+delay(1000);
+printf("%c",ce);
+}
+//textbackground(3);
+//settextcolor(4);
+clrscr();
+gotoxy(30,2);
+printf("LOVE CALCLUATOR");
+//STEP 1;
+gotoxy(8,8);
+cout<<"ENETR YOUR NAME:-";
+gotoxy(28,8);
+gets(n);
+gotoxy(8,10);
+cout<<"ENTER CRUSH NAME:-";
+gotoxy(28,10) ;
+gets(n1);
+//step 2
+strcat(n,n1);//copying name2 into  name1
+strupr(n);
+//step3 optionl code
+for(k=0;k<=strlen(n);k++)
+{
+//eliminating common letters
+for(i=0;i<strlen(n);i++)
+{
+for(j=0;j<strlen(n);j++)
+{
+if(i==j)
+continue;
+else if(n[i]==n[j])
+n[j]=n[j+1];
+}
+}
+}
+//step 4;
+int sum=0;
+for(int l=0;l<strlen(n);l++)
+sum+=n[l];
+
+gotoxy(8,15);
+cout<<"LOVE COMPATIBILITY";
+randomize();
+for(int m=0;m<150;m++)
+{
+int a;
+ a=random(200*m);
+sound(a/10);
+gotoxy(31,15);
+cout<<random(100)<<"%";
+delay(30);
+}
+//step 5
+gotoxy(31,15);
+//actul perctange;
+cout<<sum%101<<"% GUARANTEED!";
+nosound();
+getch();
+closegraph();
+}

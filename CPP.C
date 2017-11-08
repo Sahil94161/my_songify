@@ -1,0 +1,357 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<graphics.h>
+#include<conio.h>
+#include<dos.h>
+#include<time.h>
+void main()
+{
+
+    int i,a;
+    int gd=DETECT;
+    int gm;
+    initgraph(&gd,&gm,"c:\\TURBOC3\\bgi");
+    printf(" ");
+    printf("                 WELCOME  IN PRO-GRA APPLICATION EXPERIMENT 1 !\n   ");
+    settextstyle(3, HORIZ_DIR,1);
+    outtextxy(400,450,"CREATED BY SAHIL GOYAL");
+    delay(2000);
+    printf("   PROGRAMME LOADING WAIT  ");
+
+    for(i=0;i<5;i++)
+   {
+    printf(".");
+    delay(1000);
+
+    }
+       cleardevice();
+
+    while(1)
+    {
+     cleardevice( );
+    printf("            \n ");
+    printf("                      PRO-GRA APPLICATION EXPERIMENT 1   ");
+
+    printf("   .\n");
+
+    settextstyle(3, HORIZ_DIR,1);
+    outtextxy(400,450,"CREATED BY SAHIL GOYAl");
+
+    printf(" Q= Choose any shape you want to see how to make that in c/c++ ?\n");
+
+    printf(" 1. CIRCLE\n");
+    printf(" 2. SQUARE\n");
+    printf(" 3. RECTANGLE\n");
+    printf(" 4. ELLIPSE\n");
+    printf(" 5. LINE\n");
+    printf(" 6. House\n");
+    printf(" 7.car\n");
+    printf(" 8.Happy New Year\n");
+    printf(" 9.Digital Clock\n");
+    printf(" 10.exit\n");
+    printf(" Enter number:- ");
+    scanf("%d",&a);
+    switch(a)
+    {
+    case 1:
+    {
+      cleardevice();
+    settextstyle(3, HORIZ_DIR,1);
+    outtextxy(400,450,"CREATED BY SAHIL GOYAL");
+    line(0,1,640,1);
+    line(320,0,320,478);
+    circle(460,200,80);
+    settextstyle(3,HORIZ_DIR,1);
+    outtextxy(420,40,"CIRCLE");
+    settextstyle(3,HORIZ_DIR,1);
+    outtextxy(60,40,"PROGRAMME FOR CIRCLE");
+    printf(" #include<iostream.h>\n");
+    printf(" #include<graphics.h>\n");
+    printf(" #include<conio.h>\n");
+    printf("                                       .\n");
+    printf("  int main() \n");
+    printf("   { \n");
+    printf("      int gd=DETECT,gm;\n");
+    printf("      initgraph(&gd,&gm,''c:\\tc\\bgi'');\n");
+    printf("      circle(460,200,80);\n");
+     printf("                                       .\n");
+    printf("      //circle(int x , int y , radius) \n");
+     printf("                                       .\n");
+    printf("     getch();\n");
+    printf("     closegraph();\n");
+    printf("   }\n");
+    getch();
+
+    }
+    break;
+    case 2:
+    {
+    cleardevice();
+    settextstyle(3, HORIZ_DIR,1);
+    outtextxy(400,450,"CREATED BY SAHIL GOYAL");
+    line(0,1,640,1);
+    line(320,0,320,478);
+    rectangle(420,200,520,300);
+    settextstyle(3,HORIZ_DIR,1);
+    outtextxy(420,50,"SQAURE");
+	settextstyle(3,HORIZ_DIR,1);
+    outtextxy(60,40,"PROGRAMME FOR SQUARE");
+    printf(" #include<iostream.h>\n");
+    printf(" #include<graphics.h>\n");
+    printf(" #include<conio.h>\n");
+    printf("                                       .\n");
+    printf("  int main() \n");
+    printf("   { \n");
+    printf("     int gd=DETECT,gm;\n");
+    printf("     initgraph(&gd,&gm,''c:\\tc\\bgi'');\n");
+    printf("     rectangle(420,200,520,300);\n");
+     printf("                                       .\n");
+    printf("   //rectangle(x1 , y1 , x2 , y2 )\n");
+     printf("                                       .\n");
+    printf("     getch();\n");
+    printf("     closegraph();\n");
+    printf("   }\n");
+	    getch();
+
+    }
+    break;
+    case 3:
+     {
+    cleardevice();
+    settextstyle(3, HORIZ_DIR,1);
+    outtextxy(400,450,"CREATED BY SAHIL GOYAL");
+    line(0,1,640,1);
+    line(320,0,320,478);
+    rectangle(420,200,540,280);
+    settextstyle(3,HORIZ_DIR,1);
+    outtextxy(420,50,"RECTANGLE");
+	settextstyle(3,HORIZ_DIR,1);
+    outtextxy(60,40,"PROGRAMME FOR RECTANGLE");
+    printf(" #include<iostream.h>\n");
+    printf(" #include<graphics.h>\n");
+    printf(" #include<conio.h>\n");
+    printf("                                       .\n");
+    printf("  int main() \n");
+    printf("   { \n");
+    printf("      int gd=DETECT,gm;\n");
+    printf("      initgraph(&gd,&gm,''c:\\tc\\bgi'');\n");
+    printf("      rectangle(420,200,540,280);\n");
+     printf("                                       .\n");
+    printf("      //rectangle(x1 , y1 , x2 , y2) \n");
+     printf("                                       .\n");
+    printf("     getch();\n");
+    printf("     closegraph();\n");
+    printf("   }\n");
+    getch();
+
+    }
+    break;
+    case 4:
+    {
+	cleardevice();
+    settextstyle(3, HORIZ_DIR,1);
+    outtextxy(400,450,"CREATED BY SAHIL GOYAL");
+    line(0,1,640,1);
+    line(320,0,320,478);
+    ellipse(450,250,0,360,40,80);
+    settextstyle(3,HORIZ_DIR,1);
+    outtextxy(420,50,"ELLIPSE");
+	settextstyle(3,HORIZ_DIR,1);
+    outtextxy(60,40,"PROGRAMME FOR ELLIPSE");
+    printf(" #include<iostream.h>\n");
+    printf(" #include<graphics.h>\n");
+    printf(" #include<conio.h>\n");
+    printf("                                       .\n");
+    printf("  int main() \n");
+    printf("   { \n");
+    printf("     int gd=DETECT,gm;\n");
+    printf("     initgraph(&gd,&gm,''c:\\tc\\bgi'');\n");
+    printf("     ellipse(450,250,0,360,40,80);\n");
+     printf("                                       .\n");
+    printf("   //ellipse(x,y,s-ang,e-ang,x-rad,y-rad);\n");
+     printf("                                       .\n");
+    printf("     getch();\n");
+    printf("     closegraph();\n");
+    printf("   }\n");
+	    getch();
+    }
+    break;
+
+     case 5:
+    {
+    cleardevice();
+    settextstyle(3, HORIZ_DIR,1);
+    outtextxy(400,450,"CREATED BY SAHIL GOYAL");
+    line(0,1,640,1);
+    line(320,0,320,478);
+    line(450,170,540,270);
+    settextstyle(3,HORIZ_DIR,1);
+    outtextxy(420,50,"LINE");
+	settextstyle(3,HORIZ_DIR,1);
+    outtextxy(60,40,"PROGRAMME FOR LINE");
+    printf(" #include<iostream.h>\n");
+    printf(" #include<graphics.h>\n");
+    printf(" #include<conio.h>\n");
+    printf("                                       .\n");
+    printf("  int main() \n");
+    printf("   { \n");
+    printf("      int gd=DETECT,gm;\n");
+    printf("      initgraph(&gd,&gm,''c:\\tc\\bgi'');\n");
+    printf("      line(470,170,540,270);\n");
+     printf("                                       .\n");
+    printf("      //line(x1,y1 , x2,y2);\n");
+     printf("                                       .\n");
+    printf("     getch();\n");
+    printf("     closegraph();\n");
+    printf("   }\n");
+	    getch();
+    }
+    break;
+    case 6:
+    {
+    cleardevice();
+    settextstyle(3, HORIZ_DIR,1);
+    outtextxy(400,450,"CREATED BY SAHIL GOYAL");
+    line(0,1,640,1);
+
+    setcolor(WHITE)  ;
+rectangle(150,180,250,300);
+rectangle(250,180,450,300);
+rectangle(180,250,220,300);
+rectangle(290,200,400,270);
+circle(197,153,25);
+line(200,100,150,180);
+line(200,100,250,180);
+line(200,100,420,100);
+line(420,100,450,180);
+line(350,430,250,300) ;
+line(250,430,150,300);
+line(290,235,399,235);
+line(343,200,343,270);
+setfillstyle(SOLID_FILL,BROWN);
+floodfill(152, 182, WHITE);
+floodfill(252, 182, WHITE );
+setfillstyle(SLASH_FILL, BLUE);
+floodfill(182, 252, WHITE );
+floodfill(345,345,WHITE);
+setfillstyle(HATCH_FILL,GREEN);
+floodfill(200,105,WHITE);
+setfillstyle(4,6);
+floodfill(205,105,WHITE);
+setfillstyle(4,4);
+floodfill(200,155,WHITE);
+floodfill(347,202,WHITE);
+setfillstyle(4,8);
+floodfill(345,272,WHITE);
+setfillstyle(4,10);
+floodfill(294,233,WHITE);
+setfillstyle(4,11);
+floodfill(292,237,WHITE);
+getch();
+    }
+    break;
+    case 7:
+    {
+    int n,i;
+
+n=getmaxx();
+for(i=0;i<n;i++)
+{
+settextstyle(3, HORIZ_DIR,1);
+outtextxy(400,450,"CREATED BY SAHIL GOYAL");
+line(0,1,640,1);
+// Road
+setcolor(4);
+line(0,370,n,370);
+//sun
+setcolor(15);
+circle(80+i,80,50);
+setfillstyle(1,YELLOW);
+floodfill(80+i, 80, WHITE);
+//vcr games road
+setcolor(15);
+rectangle(525,250,535,370);
+setfillstyle(2,BROWN);
+floodfill(527, 252, WHITE);
+rectangle(480,200,580,250);
+setfillstyle(3,7);
+floodfill(482, 202, WHITE);
+outtextxy(480,220,"VCR GAMES");
+//bus
+setcolor(15);
+rectangle(0+i,250,150+i,350);
+setfillstyle(4,9);
+floodfill(1+i, 252, WHITE);
+circle(35+i,360,10);
+setfillstyle(5,10);
+floodfill(37+i, 362, WHITE);
+circle(120+i,360,10);
+setfillstyle(5,10);
+floodfill(122+i, 362, WHITE);
+delay(100) ;
+cleardevice();
+
+}  getch();
+
+    }
+    break;
+    case 8:
+    {
+int n,c,i;
+char a[100];
+ cleardevice();
+printf("Enter number of second left:-");
+scanf("%d",&n);
+settextstyle(7,HORIZ_DIR,5) ;
+for(i=n;i>0;i--)
+{
+setcolor(7);
+sprintf(a,"New Year in %d Second ",i);
+outtextxy(10,210,a);
+delay(2000);
+cleardevice();
+}
+settextstyle(10,HORIZ_DIR,4);
+c=getmaxcolor();
+for(i=0;i<=c;i++)
+{
+setcolor(i);
+outtextxy(30,200,"HAPPY NEW YEAR :-)");
+delay(2000);
+}
+getch();
+}
+break;
+case 9:
+{
+time_t rawtime;
+struct tm *currentTime;
+char a[100],c;
+while(!kbhit())
+{
+rawtime=time(NULL);
+currentTime=localtime(&rawtime);
+strftime(a,100,"%I:%M:%S",currentTime);
+setcolor(11);
+settextstyle(4,HORIZ_DIR,10);
+outtextxy(60,100,a);
+strftime(a,100,"%p",currentTime);
+settextstyle(7,HORIZ_DIR,2);
+outtextxy(600,8,a);
+strftime(a,100,"%a,%d %b,%Y ",currentTime);
+settextstyle(4,HORIZ_DIR,5);
+outtextxy(130,250,a);
+delay(1000);
+cleardevice();
+}
+}
+break;
+case 10:  exit(1);
+break;
+default:printf("Plese enter the right key\n ");
+break;
+}
+}
+getch();
+closegraph();
+}

@@ -1,0 +1,54 @@
+#include<iostream.h>
+#include<conio.h>
+class std
+{
+private:
+int c,i,d;
+public:
+void get();
+void put();
+};
+void std::get()
+{
+cout<<endl<<"enter the table:- " ;
+cin>>c;
+}
+void std::put()
+{
+for(i=1;i<=10;i++)
+{
+d=c*i;
+cout<<endl<<c<<"*"<<i<<"="<<d<<endl;
+}
+}
+void main()
+{
+std a[3];
+int i,n;
+clrscr();
+for(i=0;i<=2;i++)
+{
+cout<<endl<<"table printed no:-"<<i;
+a[i].get();
+}
+cout<<endl<<"enter printed no:-";
+cin>>n;
+switch(n)
+{
+case 0:
+clrscr();
+a[0].put();
+break;
+case 1:
+clrscr();
+a[1].put();
+break;
+case 2:
+clrscr();
+a[2].put();
+break;
+default:
+break;
+}
+getch();
+}

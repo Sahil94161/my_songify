@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+class add
+{
+private:
+int a,b,c;
+public:
+void get()
+{
+cout<<"enter the value of a:-";
+cin>>a;
+cout<<"\nenter the value of b:-";
+cin>>b;
+c=a+b;
+cout<<"value of c is ="<<c;
+}
+};
+void main()
+{
+add a;
+clrscr();
+add  *ptr;
+ptr =&a;
+getch();
+
+}

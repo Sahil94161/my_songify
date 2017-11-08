@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,pos,n,a[20];
+clrscr();
+printf("enter the array: ");
+scanf("%d",&n);
+printf("enter the elements of array:\n");
+for(i=0;i<=n;i++)
+{
+scanf("%d",&a[i]);
+}
+printf("enter the delection of postion of array value:\n");
+scanf("%d",&pos);
+for(pos=0;pos<=n;pos++)
+{
+a[pos-1]=a[pos];
+}
+n--;
+printf("new array:\n");
+for(i=0;i<=n;i++)
+{
+printf("%d\n",a[i]);
+}
+getch();
+}

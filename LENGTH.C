@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char str[20],i,length;
+clrscr();
+printf("\n enter any number");
+gets(str);
+for(i=0;str[i]!='\0';i++)
+{
+length=i ;
+}
+printf("length is found%c",length);
+getch();
+}

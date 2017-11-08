@@ -1,0 +1,80 @@
+
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+#include<string.h>
+void main()
+{
+FILE *fp;
+char na[20],che;
+char fa[20];
+char da[20];
+long int acc=123456789,ph,ba,addh,ac,found=0;
+clrscr();
+/*
+do{
+cout<<"\nEnter the Name:-";
+gets(na);
+cout<<"\nEnter the father Name:-";
+gets(fa);
+cout<<"\nEnter the date of birth:-";
+cin>>da;
+cout<<"\nEnter the addhar no.12 digit:-";
+cin>>addh;
+cout<<"\nEnter the phone No. 10 digit:-";
+cin>>ph;
+cout<<"\nEnter the Amount is limit (5000):-";
+cin>>ba;
+if(ba>5000)
+{
+cout<<"\nAcc no. is:- "<<acc;
+}
+else
+printf("sorrry");
+fp=fopen("record.txt","a");
+fprintf(fp,"\n Name:-  %s \n father name:- %s\n Date Birth:- %s\n addhar no.:-  %ld\n phone no:- %ld\n Accountblance:- %ld\n Account no:- %ld \n",na,fa,da,addh,ph,ba,acc) ;
+printf(" \n Record writen successfully!!!!");
+fclose(fp);
+cout<<"\ndo,you want to continue plz press key(y/n):-";
+
+che=getche();
+}
+while(che=='y') ;      */
+
+fp=fopen("record.txt","r");
+if(fp==NULL)
+{
+printf("\n File opening Error");
+}
+cout<<"Enter the Account No.:-";
+cin>>ac;
+while(1)
+{
+fscanf(fp," %s %s %s  %ld %ld %ld %ld \n",&na,&fa,&da,&addh,&ph,&ba,&acc);
+if(ac==-1)
+break;
+if(acc==ac)
+{
+ found = 1;
+ cout<<"\n---------Record of person-----------";
+cout<<"\n Name:- ";
+puts(na);
+cout<<" \n father name:-";
+puts(fa);
+cout<<" \n Date Birth:-"<<da;
+cout<< "\n addhar no.:-"<<addh;
+cout<<" \n phone no:-"<<ph;
+cout<<" \n Accountblance:-"<<ba;
+cout<<" \n Account no:- "<<acc;
+break;
+}
+}
+if(found==0)
+{
+cout<<"\n record not found in the file ";
+}
+fclose(fp);
+
+getch();
+}
+

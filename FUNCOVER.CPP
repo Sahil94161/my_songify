@@ -1,0 +1,38 @@
+#include<iostream.h>
+#include<conio.h>
+class abc
+{
+public:
+void sum()
+{
+cout<<"\"HELLO\"";
+}
+void sum(int a )
+{
+int c ;
+c=a*a;
+cout<<"\nc="<<c;
+}
+void sum(int a,int b)
+{
+int c;
+c=a+b;
+cout<<"\nc="<<c;
+}
+void sum(int a,int b,int c)
+{
+int sa;
+sa=(a+b+c)/100;
+cout<<"\nsalary="<<sa;
+}
+};
+void main()
+{
+abc d;
+clrscr();
+d.sum();
+d.sum(5);
+d.sum(5,5);
+d.sum(100,5,6);
+getch();
+}
